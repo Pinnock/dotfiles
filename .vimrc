@@ -22,6 +22,7 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
 if has("autocmd")
     " Enable file type detection
     filetype on
@@ -29,5 +30,7 @@ if has("autocmd")
     " Syntax of these languages is fussy over tabs vs. spaces
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+    " Remove trailing whitespace when saving certain types of files
+    autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
 endif
 
