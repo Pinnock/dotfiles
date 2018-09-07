@@ -13,12 +13,15 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rdnetto/YCM-Generator'
 call vundle#end()                    " required
 filetype plugin indent on            " required
 "All non-Plugin stuff go after this line
 syntax on
 set number
 set expandtab
+set path+=**
+set wildmenu
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
