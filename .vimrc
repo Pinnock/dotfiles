@@ -32,5 +32,6 @@ if has("autocmd")
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
     " Remove trailing whitespace when saving certain types of files
     autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
+    autocmd FileType c,cpp,java,php setlocal colorcolumn=100
 endif
 
