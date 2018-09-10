@@ -37,8 +37,10 @@ set scrolloff=3                     " Minimum lines to show above/below cursor
 set incsearch                       " Search as characters are entered
 set hlsearch                        " Highlight matches
 set showmatch                       " Show matching bracket
+set visualbell                      " Turn off beeping
 "Use :MakeTags to generate tags file
 command! MakeTags !ctags -R .
+" Show tab line even when only 1 bufer
 let g:airline#extensions#tabline#enabled=1
 " Tweaks for browsing via netrw
 let g:netrw_banner=0        " hide the banner
