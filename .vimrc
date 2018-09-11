@@ -12,7 +12,6 @@ Plugin 'vim-airline/vim-airline'    " Provides enhanced status bar and tab line
 Plugin 'airblade/vim-gitgutter'     " Provides some git status info in the margin
 call vundle#end()                   " required
 filetype plugin indent on           " Load filetype-specific plugins and indent files; required
-
 set exrc                            " Allow project-specific .vimrc
 set secure                          " Improve security for project specific .vimrc
 syntax enable                       " Enable syntax highligting
