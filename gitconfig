@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Rayon Pinnock
+	email = pinnock.mail@gmail.com
+	editor = vim
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
